@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "sb:android": "turbo run android --scope=@rn-design-system/storybook",
     "sb:ios": "turbo run sb:ios --scope=@rn-design-system/storybook",
     "sb:web": "turbo run sb:web --scope=@rn-design-system/storybook",
@@ -15,6 +16,9 @@
     "sb:watch": "turbo run sb:watch --scope=@rn-design-system/storybook"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
