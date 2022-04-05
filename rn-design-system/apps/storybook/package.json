@@ -1,6 +1,6 @@
 {
   "name": "@rn-design-system/storybook",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.ts",
   "scripts": {
     "sb:android": "expo start --android",
@@ -10,6 +10,8 @@
     "sb:watch": "sb-rn-watcher"
   },
   "dependencies": {
+    "@rn-design-system/config": "*",
+    "@rn-design-system/tsconfig": "*",
     "@react-native-async-storage/async-storage": "~1.15.0",
     "@react-native-community/datetimepicker": "4.0.0",
     "@react-native-community/slider": "4.1.12",

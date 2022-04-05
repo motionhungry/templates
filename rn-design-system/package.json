@@ -1,7 +1,7 @@
 {
   "license": "MPL 2.0",
   "name": "rn-design-system",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "sb:android": "turbo run android --scope=@rn-design-system/storybook",
+    "sb:android": "turbo run sb:android --scope=@rn-design-system/storybook",
     "sb:ios": "turbo run sb:ios --scope=@rn-design-system/storybook",
     "sb:web": "turbo run sb:web --scope=@rn-design-system/storybook",
     "sb:prestart": "turbo run sb:prestart --scope=@rn-design-system/storybook",
