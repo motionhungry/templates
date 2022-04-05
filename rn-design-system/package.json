@@ -1,0 +1,26 @@
+{
+  "license": "MPL 2.0",
+  "name": "rn-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "sb:android": "turbo run android --scope=@rn-design-system/storybook",
+    "sb:ios": "turbo run sb:ios --scope=@rn-design-system/storybook",
+    "sb:web": "turbo run sb:web --scope=@rn-design-system/storybook",
+    "sb:prestart": "turbo run sb:prestart --scope=@rn-design-system/storybook",
+    "sb:watch": "turbo run sb:watch --scope=@rn-design-system/storybook"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.17"
+}
