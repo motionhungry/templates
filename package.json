@@ -1,0 +1,17 @@
+{
+  "name": "@motionhungry/templates",
+  "version": "0.1.0",
+  "description": "A collection of project starter templates for quickly scaffolding new projects",
+  "repository": "https://github.com/motionhungry/templates.git",
+  "author": "Kyle Getrost <kyle@motionhungry.com>",
+  "license": "MLP 2.0",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
+}
