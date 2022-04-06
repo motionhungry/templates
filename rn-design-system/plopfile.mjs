@@ -1,5 +1,4 @@
 export default function (plop) {
-  // create your generators here
   plop.setGenerator('component', {
     description: 'a react component',
     prompts: [
@@ -24,6 +23,24 @@ export default function (plop) {
         type: 'add',
         path: 'apps/storybook/stories/{{ name }}.stories.tsx',
         templateFile: '.plop/component/stories/component.stories.tsx.hbs',
+      },
+    ],
+  });
+
+  plop.setGenerator('theme', {
+    description: 'a theme',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'theme name',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'packages/themes/src/themes/{{ name }}.ts',
+        templateFile: '.plop/theme/theme.ts.hbs',
       },
     ],
   });
