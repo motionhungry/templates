@@ -1,9 +1,14 @@
+import { defaultTheme } from '@rn-design-system/themes';
 import { withBackgrounds } from '@storybook/addon-ondevice-backgrounds';
 import { withTheme } from 'storybook-addon-ondevice-styled-theme';
 
-// Themes
-const themes = [];
 
-// Backgrounds
 export const decorators = [withBackgrounds, withTheme];
-export const parameters = {};
+export const parameters = {
+  backgrounds: [
+    { name: 'default', value: defaultTheme.backgroundColor },
+  ],
+  themes: [
+    { name: 'default', ...defaultTheme },
+  ],
+};

@@ -1,4 +1,5 @@
 import { Box, Text } from '@rn-design-system/core';
+import { useTheme } from '@rn-design-system/hooks';
 import { MarginProps } from 'styled-system';
 
 type {{ name }}Props = {
@@ -6,8 +7,9 @@ type {{ name }}Props = {
 } & MarginProps;
 
 const {{ name }} = ({ someProp, ...props }: {{ name }}Props): JSX.Element => {
+  const theme = useTheme();
   return (
-    <Box {...props}>
+    <Box backgroundColor={theme.colors.primary[100]} {...props}>
       <Text>{someProp}</Text>
     </Box>
   );

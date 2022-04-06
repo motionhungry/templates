@@ -15,4 +15,4 @@ export default ButtonMeta;
 
 type ButtonStory = ComponentStory<typeof Button>;
 
-export const Default: ButtonStory = (args) => <Button {...args} />;
+export const Primary: ButtonStory = (args) => <Button {...args} />;
