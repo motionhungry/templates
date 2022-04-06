@@ -10,6 +10,7 @@
     "sb:watch": "sb-rn-watcher"
   },
   "dependencies": {
+    "@rn-design-system/components": "*",
     "@rn-design-system/config": "*",
     "@rn-design-system/tsconfig": "*",
     "@react-native-async-storage/async-storage": "~1.15.0",

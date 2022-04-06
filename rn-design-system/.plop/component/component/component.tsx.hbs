@@ -1,0 +1,16 @@
+import { Box, Text } from '@rn-design-system/core';
+import { MarginProps } from 'styled-system';
+
+type {{ name }}Props = {
+  someProp: string;
+} & MarginProps;
+
+const {{ name }} = ({ someProp, ...props }: {{ name }}Props) => {
+  <Box {...props}>
+    <Text>{someProp}</Text>
+  </Box>
+};
+
+{{ name }}.displayName = '{{ name }}';
+
+export { {{ name }} };
