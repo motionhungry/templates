@@ -13,8 +13,8 @@
     "sb:android": "turbo run sb:android --scope=@rn-design-system/storybook",
     "sb:ios": "turbo run sb:ios --scope=@rn-design-system/storybook",
     "sb:web": "turbo run sb:web --scope=@rn-design-system/storybook",
-    "sb:prestart": "turbo run sb:prestart --scope=@rn-design-system/storybook",
-    "sb:watch": "turbo run sb:watch --scope=@rn-design-system/storybook"
+    "sb:prestart": "yarn --cwd ./apps/storybook sb:watch",
+    "sb:watch": "yarn --cwd ./apps/storybook sb:watch"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",

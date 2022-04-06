@@ -36,10 +36,6 @@ export const boxStyles = css`
   ${space}
 `;
 
-const Box = styled.View<BoxProps>`
+export const Box = styled.View<BoxProps>`
   ${boxStyles}
 `;
-
-Box.displayName = 'Box';
-
-export { Box };

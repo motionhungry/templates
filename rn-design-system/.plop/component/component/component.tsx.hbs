@@ -5,10 +5,12 @@ type {{ name }}Props = {
   someProp: string;
 } & MarginProps;
 
-const {{ name }} = ({ someProp, ...props }: {{ name }}Props) => {
-  <Box {...props}>
-    <Text>{someProp}</Text>
-  </Box>
+const {{ name }} = ({ someProp, ...props }: {{ name }}Props): JSX.Element => {
+  return (
+    <Box {...props}>
+      <Text>{someProp}</Text>
+    </Box>
+  );
 };
 
 {{ name }}.displayName = '{{ name }}';

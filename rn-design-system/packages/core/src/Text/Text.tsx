@@ -21,7 +21,7 @@ type TextProps = BorderProps &
   SpaceProps &
   TypographyProps;
 
-const Text = styled.Text<TextProps>`
+export const Text = styled.Text<TextProps>`
   ${border}
   ${color}
   ${flexbox}
@@ -29,5 +29,3 @@ const Text = styled.Text<TextProps>`
   ${space}
   ${typography}
 `;
-
-export { Text };

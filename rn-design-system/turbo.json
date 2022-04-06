@@ -10,9 +10,6 @@
     },
     "sb:web": {
       "cache": false
-    },
-    "sb:watch": {
-      "cache": false
     }
   }
 }
