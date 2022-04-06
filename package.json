@@ -1,7 +1,7 @@
 {
   "name": "@motionhungry/templates",
   "version": "0.0.0",
-  "description": "A collection of project starter templates for quickly scaffolding new projects",
+  "description": "A collection of starter templates for quickly scaffolding new projects",
   "repository": "https://github.com/motionhungry/templates.git",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
   "license": "MLP 2.0",
